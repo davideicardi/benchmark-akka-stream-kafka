@@ -11,8 +11,8 @@ Simple console app to benchmark akka stream kafka
 
 Get the package:
 
-    curl -O -L https://github.com/davideicardi/benchmark-akka-stream-kafka/releases/download/v0.1/benchmark-akka-stream-kafka-0.1.zip
-    unzip benchmark-akka-stream-kafka-0.1.zip
+    curl -O -L https://github.com/davideicardi/benchmark-akka-stream-kafka/releases/download/v0.2/benchmark-akka-stream-kafka-0.2.zip
+    unzip benchmark-akka-stream-kafka-0.2.zip
 
 IMPORTANT: create a configuration inside `./conf/application.conf` file with your specific configuration:
 
