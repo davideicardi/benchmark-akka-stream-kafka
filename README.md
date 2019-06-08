@@ -38,3 +38,8 @@ akka.kafka.producer {
 Run the benchmark:
 
     ./bin/benchmark-akka-stream-kafka
+    
+For kerberos enable the section inside the `application.conf` and use:
+
+     ./bin/benchmark-akka-stream-kafka -Djava.security.auth.login.config=jaas.conf
+    
