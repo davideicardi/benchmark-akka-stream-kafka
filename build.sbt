@@ -19,3 +19,12 @@ libraryDependencies += "com.typesafe.akka" %% "akka-slf4j" % akkaVersion
 libraryDependencies += "org.apache.logging.log4j" % "log4j-slf4j-impl" % log4jVersion
 libraryDependencies += "org.apache.logging.log4j" % "log4j-api" % log4jVersion
 libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % log4jVersion
+
+
+enablePlugins(JavaServerAppPackaging)
+
+trapExit := false
+topLevelDirectory := None
+// Prepend a conf and plugins directory to the classpath to allow to customize settings
+//  NOTE: to load jars I must put "plugins/*"
+scriptClasspath ~= (cp => "../../conf"  +: cp)
