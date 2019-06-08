@@ -1,6 +1,6 @@
 name := "benchmark-akka-stream-kafka"
 
-version := "0.1"
+version := "0.2"
 
 scalaVersion := "2.12.8"
 
@@ -26,5 +26,4 @@ enablePlugins(JavaServerAppPackaging)
 trapExit := false
 topLevelDirectory := None
 // Prepend a conf and plugins directory to the classpath to allow to customize settings
-//  NOTE: to load jars I must put "plugins/*"
-scriptClasspath ~= (cp => "../../conf"  +: cp)
+scriptClasspath ~= (cp => "../conf"  +: cp)
